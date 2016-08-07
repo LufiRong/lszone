@@ -1,0 +1,471 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>多空地带</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../chart/css/index.css">
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body class="lessondetail">
+    <header class="navbar-static-top bs-docs-nav" id="top">
+        <div class="navbar-header">
+          <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="#" class="navbar-brand">logo</a>
+        </div>
+        <nav id="bs-navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="index.html">首页</a>
+                </li>
+                <li class="active">
+                    <a href="lessondetail.html">淘金殿堂</a>
+                </li>
+                <li>
+                  <a href="newsList.html">今日热点</a>
+                </li>
+                <li>
+                    <a href="skillList.html">技巧探秘</a>
+                </li>
+                <li>
+                    <a href="tradingPatterns.html">优势战法</a>
+                </li>
+                <li>
+                    <a href="#">交易训练</a>
+                </li>      
+            </ul>
+            <a class="btn pull-right getoutBtn" href="lessonlist.html">返回课堂列表</a>
+            <ul class="nav navbar-nav pull-right">
+                <li><a href="">换肤</a></li>
+                <li><a href="">管理后台</a></li>
+            </ul>
+            <span class="pull-right">弹幕 <span class="pull-right switchbtn"></span></span>
+        </nav>
+    </header>
+    <div class="changebg"></div>
+    <div class="wrapper">
+        <div class="leftcontent">
+        </div>
+        <div class="scrollbar"><marquee direction="left">通知：2016年11月11号关闭系统</marquee></div>
+        <div class="rightcontent">
+            <ul class="subnav">
+                <li><a href="javascript:void(0);" data-id="0" class="active">图片</a></li>
+                <li><a href="javascript:void(0);" data-id="1">flash</a></li>
+                <li><a href="javascript:void(0);" data-id="2">心理测试</a></li>
+                <li><a href="javascript:void(0);" data-id="3">猜涨跌</a></li>    
+            </ul>
+            <div class="adarea">
+                <div class="subbox active">
+                    <img src="../images/lesson1.jpg">
+                </div>
+                <div class="subbox">            
+                </div>
+                <div class="subbox">
+                    <div class="testbox">
+                    <div class="chartbox">
+                        <div class="title">
+                            交易心态节律曲线图
+                        </div>
+                        <ul class="todays">
+                            <li><span>看多节律</span> <span class="score" id="duo">0</span><span class="atti"></span> <span class="trend"></span></li>
+                            <li><span>看空节律</span> <span class="score" id="kong">0</span><span class="atti"></span> <span class="trend"></span></li>
+                            <li><span>情绪节律</span> <span class="score" id="qingxu">0</span><span class="atti"></span> <span class="trend"></span></li>
+                            <li><span>智慧节律</span> <span class="score" id="zhihui">0</span><span class="atti"></span> <span class="trend"></span></li>
+                        </ul>
+                    </div>
+
+                    <div id="container"></div>
+                    <div class="container2">
+                        <div class="test-box">
+                            <h3>测试今日交易心态节律，请输入您的生日：</h3> 
+                            <select id="sel_year"></select> 年
+                            <select id="sel_month"></select> 月
+                            <select id="sel_day"></select> 日
+                            <a href="javascript:void(0);" class="chartbtn">开始测试</a>
+                        </div>
+                        <input type="hidden" id="starttime" value=""> 
+                        <input type="hidden" id="endtime" value="2016.4.9">
+                    </div>
+                    </div>
+                </div>
+                <div class="subbox">
+                    <img src="../images/lesson2.jpg">
+                </div>
+            </div>
+            <ul class="socketbox">
+                <li>
+                    <div class="logo"><img src="../images/pic01.jpg"></div>
+                    <div class="content">
+                        <div class="title">
+                            阁下 <span class="time fr">4月8号 下午10:20:02</span>
+                        </div>
+                        <div class="words">老师目前追清仓短多可否？谢谢</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="logo"><img src="../images/pic01.jpg"></div>
+                    <div class="content">
+                        <div class="title">
+                            阁下 <span class="time fr">4月8号 下午10:20:02</span>
+                        </div>
+                        <div class="words">老师目前追清仓短多可否？谢谢</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="logo"><img src="../images/pic01.jpg"></div>
+                    <div class="content">
+                        <div class="title">
+                            阁下 <span class="time fr">4月8号 下午10:20:02</span>
+                        </div>
+                        <div class="words">老师目前追清仓短多可否？谢谢</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="logo"><img src="../images/pic01.jpg"></div>
+                    <div class="content">
+                        <div class="title">
+                            阁下 <span class="time fr">4月8号 下午10:20:02</span>
+                        </div>
+                        <div class="words">老师目前追清仓短多可否？谢谢</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="logo"><img src="../images/pic01.jpg"></div>
+                    <div class="content">
+                        <div class="title">
+                            阁下 <span class="time fr">4月8号 下午10:20:02</span>
+                        </div>
+                        <div class="words">老师目前追清仓短多可否？谢谢</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="logo"><img src="../images/pic01.jpg"></div>
+                    <div class="content">
+                        <div class="title">
+                            阁下 <span class="time fr">4月8号 下午10:20:02</span>
+                        </div>
+                        <div class="words">老师目前追清仓短多可否？谢谢</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="logo"><img src="../images/pic01.jpg"></div>
+                    <div class="content">
+                        <div class="title">
+                            阁下 <span class="time fr">4月8号 下午10:20:02</span>
+                        </div>
+                        <div class="words">老师目前追清仓短多可否？谢谢</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="logo"><img src="../images/pic01.jpg"></div>
+                    <div class="content">
+                        <div class="title">
+                            阁下 <span class="time fr">4月8号 下午10:20:02</span>
+                        </div>
+                        <div class="words">老师目前追清仓短多可否？谢谢</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="logo"><img src="../images/pic01.jpg"></div>
+                    <div class="content">
+                        <div class="title">
+                            阁下 <span class="time fr">4月8号 下午10:20:02</span>
+                        </div>
+                        <div class="words">老师目前追清仓短多可否？谢谢</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="logo"><img src="../images/pic01.jpg"></div>
+                    <div class="content">
+                        <div class="title">
+                            阁下 <span class="time fr">4月8号 下午10:20:02</span>
+                        </div>
+                        <div class="words">老师目前追清仓短多可否？谢谢</div>
+                    </div>
+                </li>
+            </ul>
+            <div class="inputbox">
+                <span class="icon-face"></span>
+                <span class="icon-send"></span>
+                <div class="input">
+                    <input type="text"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer"></div>
+
+</body>
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+<script src="../chart/highcharts/js/highcharts.js"></script>
+<script src="../chart/highcharts/js/modules/exporting.js"></script>
+<script src="../chart/highcharts/js/themes/dark-blue.js"></script>
+<script type="text/javascript" src="../chart/js/birthday.js"></script>
+<script type="text/javascript" src="../js/lesson.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $('#container').highcharts({
+            chart: {
+                type: 'spline'
+            },
+            title: {
+                text: ''
+            },
+            subtitle: {
+                text: ''
+            },
+            xAxis: {
+                categories: ['4.4', '4.5', '4.6', '4.7', '4.8', '4.9', '4.10', '4.11', '4.12', '4.13', '4.14', '4.15', '4.16', '4.17', '4.18', '4.19']
+            },
+            /*yAxis: {
+                title: {
+                    text: 'sss'
+                },
+                labels: {
+                    formatter: function () {
+                        return this.value;
+                    }
+                }
+            },*/
+            yAxis: {
+                title: {
+                    text: ''
+                },
+                tickPositions: [-100, -50, 0, 50, 100],
+                max: 100,
+                min: -100,
+                labels: {
+                    formatter: function() {
+                        //注意改的是这里！！！！！！
+                        if (this.value >0) {
+                            return '<span style="fill: white;">' + this.value; + '</span>';
+                        } else if(this.value <0){
+                            return '<span style="fill: gray;">' + this.value; + '</span>';
+                        } else {
+                            return this.value;
+                        }
+                    }
+                }
+            },
+            tooltip: {
+                crosshairs: true,
+                shared: true
+            },
+            plotOptions: {  
+                spline: {  
+                    lineWidth: 1,  
+                    fillOpacity: 0.1,  
+                     marker: {  
+                        enabled: true,  
+                        radius: 2,
+                        states: {  
+                            hover: {  
+                                enabled: true,  
+                                radius: 3  
+                            }  
+                        }  
+                    },  
+                    shadow: false  
+                }  
+            },  
+            series: [{
+                name: '看多节律',
+                marker: {
+                    symbol: 'circle'
+                },
+                data: [0, 0, 0, 0, 0, {
+                    y: 0,
+                    marker: {
+                        symbol: 'url(../chart/images/sun.png)'
+                    }
+                }, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+            }, {
+                name: '看空节律',
+                marker: {
+                    symbol: 'circle'
+                },
+                data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            }, {
+                name: '情绪节律',
+                marker: {
+                    symbol: 'circle'
+                },
+                data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            }, {
+                name: '智慧节律',
+                marker: {
+                    symbol: 'circle'
+                },
+                data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            }]
+        });
+
+
+        //更改日期
+    var days = []; //日期数组
+    for(var i=5;i>0;i--) {
+        var mydate = new Date();
+        mydate.setDate(mydate.getDate()-i);
+        var m = mydate.getMonth()+1;
+        var d = mydate.getDate();
+        var str2 = m + "." + d;
+        days.push(str2);    
+    } 
+    for(var i=0;i<11;i++) {
+        var mydate = new Date();
+        mydate.setDate(mydate.getDate()+i);
+        var m = mydate.getMonth()+1;
+        var d = mydate.getDate();
+        var str1 = m + "." + d;
+        days.push(str1);    
+    }   
+    var chart = $('#container').highcharts();
+    chart.xAxis[0].setCategories(days); //重置x轴日期
+
+
+//生日选择    
+    $.ms_DatePicker({
+            YearSelector: ".sel_year",
+            MonthSelector: ".sel_month",
+            DaySelector: ".sel_day"
+    });
+    $.ms_DatePicker();
+
+//计算生存日
+    $(".chartbtn").click(function(){
+        starttimeChange();
+    });
+
+
+//字符串转成Time(dateDiff)所需方法
+function stringToTime(string) {
+    var f = string.split(' ', 2);
+    var d = (f[0] ? f[0] : '').split('.', 3);
+    var t = (f[1] ? f[1] : '').split(':', 3);
+    return (new Date(
+        parseInt(d[0], 10) || null,
+        (parseInt(d[1], 10) || 1) - 1,
+        parseInt(d[2], 10) || null,
+        parseInt(t[0], 10) || null,
+        parseInt(t[1], 10) || null,
+        parseInt(t[2], 10) || null
+    )).getTime();
+}
+
+function dateDiff(date1, date2) {
+    var type1 = typeof date1, type2 = typeof date2;
+    if (type1 == 'string')
+        date1 = stringToTime(date1);
+    else if (date1.getTime)
+        date1 = date1.getTime();
+    if (type2 == 'string')
+        date2 = stringToTime(date2);
+    else if (date2.getTime)
+        date2 = date2.getTime();
+    return (date2 - date1) / (1000 * 60 * 60 * 24); //结果是秒
+}
+
+//计算生存日期
+function starttimeChange() {
+    var yy = $("#sel_year").val(),
+        mm = $("#sel_month").val(),
+        dd = $("#sel_day").val();
+    if(yy == 0||mm == 0||dd == 0) {
+        alert("请输入您的出生日期！");
+        return false;
+    } else {
+        $("#starttime").val(yy+"."+mm+"."+dd);
+    }
+    if ($("#starttime").val() == "") {
+        alert("请输入您的出生日期！");
+        return false;
+    } else {
+        var date1 = $("#starttime").val();
+        var date2 = $("#endtime").val(); 
+        var livedays = dateDiff(date1, date2);
+    }
+   //曲线赋值
+    var vals1 = [];//看多节律数据数组
+    var vals2 = [];//看空节律数据数组
+    var vals3 = [];//情绪节律数据数组
+    var vals4 = [];//智慧节律数据数组
+    for(var i=5; i>0; i--) {
+        var val1 = Math.round(Math.sin((2*(Math.PI)*(livedays-i))/23)*100);
+        var val2 = Math.round(Math.sin((2*(Math.PI)*(livedays-i))/28)*100);
+        var val3 = Math.round(Math.sin((2*(Math.PI)*(livedays-i))/33)*100);
+        var val4 = Math.round(Math.sin((2*(Math.PI)*(livedays-i))/38)*100);
+        vals1.push(val1);
+        vals2.push(val2);
+        vals3.push(val3);
+        vals4.push(val4);
+    }
+    for(var i=0; i<11; i++) {
+        var val1 = Math.round(Math.sin((2*(Math.PI)*(livedays+i))/23)*100);
+        var val2 = Math.round(Math.sin((2*(Math.PI)*(livedays+i))/28)*100);
+        var val3 = Math.round(Math.sin((2*(Math.PI)*(livedays+i))/33)*100);
+        var val4 = Math.round(Math.sin((2*(Math.PI)*(livedays+i))/38)*100);
+        vals1.push(val1);
+        vals2.push(val2);
+        vals3.push(val3);
+        vals4.push(val4);
+    }
+    chart.series[0].setData(vals1); //重置y轴值
+    chart.series[1].setData(vals2); //重置y轴值
+    chart.series[2].setData(vals3); //重置y轴值
+    chart.series[3].setData(vals4); //重置y轴值
+
+    $("#duo").text(vals1[5]);
+    $("#kong").text(vals2[5]);
+    $("#qingxu").text(vals3[5]);
+    $("#zhihui").text(vals4[5]);
+    
+    $(".atti").removeClass("atti-sm").removeClass("atti-lsm").removeClass("atti-cr").removeClass("atti-lcr");
+    $(".score").each(function(){
+        if($(this).text()>0 && $(this).text()<50) {
+            $(this).next(".atti").addClass("atti-sm");
+        }
+        if($(this).text()>=50) {
+            $(this).next(".atti").addClass("atti-lsm");
+        }
+        if($(this).text()<0 && $(this).text()>=-50) {
+            $(this).next(".atti").addClass("atti-cr");
+        }
+        if($(this).text()<-50) {
+            $(this).next(".atti").addClass("atti-lcr");
+        }
+    });
+    
+    $(".trend").removeClass("trend-up").removeClass("trend-down");
+    if(vals1[5]>vals1[6]) {
+        $("#duo").next().next(".trend").addClass("trend-down");
+    } else {
+        $("#duo").next().next(".trend").addClass("trend-up");
+    }
+    if(vals2[5]>vals2[6]) {
+        $("#kong").next().next(".trend").addClass("trend-down");
+    } else {
+        $("#kong").next().next(".trend").addClass("trend-up");
+    }
+    if(vals3[5]>vals3[6]) {
+        $("#qingxu").next().next(".trend").addClass("trend-down");
+    } else {
+        $("#qingxu").next().next(".trend").addClass("trend-up");
+    }
+    if(vals4[5]>vals4[6]) {
+        $("#zhihui").next().next(".trend").addClass("trend-down");
+    } else {
+        $("#zhihui").next().next(".trend").addClass("trend-up");
+    }   
+} 
+});
+
+</script>
+</html>
